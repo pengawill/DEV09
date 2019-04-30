@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <!-- Will Johnson, DEV08, 04/10/19, Version 1.1 -->
+  <meta charset="UTF-8">
+  <title>DEV08</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  
+  <h1>Elderflower</h1>
+  <div id="content">
+	<h2>Custom Signage</h2>
+	<p>
+	  Please input your custom sign message:
+	  <br/><br/>
+	  
+	</p>
+    <div id="greeting" class="message">Hello!</div>
+    <table>
+      <tr>
+        <td>Custom sign: </td>
+        <td id="userSign">
+          <input type="text" id="signInput"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>Upgrade Font?</td>
+        <td><input type="checkbox" id="fontInput">(+$1 per tile)</input></td>
+      </tr>
+      <tr>
+        <td>Custom Color?</td>
+        <td><input type="checkbox" id="colorInput">(+$5 flat fee)</input></td>
+      </tr>
+      <tr>
+        <td>Total tiles: </td>
+        <td id="tiles"></td>
+      </tr>
+      <tr>
+        <td>Subtotal: </td>
+        <td id="subTotal"></td>
+      </tr>
+      <tr>
+        <td>Shipping: </td>
+        <td id="shipping"></td>
+      </tr>
+      <tr>
+        <td>Grand total: </td>
+        <td id="grandTotal"></td>
+      </tr>
+    </table>
+    <a href="#" id="confirmOrder" class="action">Preview and Confirm</a>
+  </div>
+  <div id="previewScreen">
+    <br />
+    <a href="#" id="confirmButton">Confirm</a>
+    <br />
+    <a href="#" id="cancelButton">Cancel</a>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
